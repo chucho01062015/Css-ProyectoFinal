@@ -1,0 +1,281 @@
+body{
+  font-family:'Dancing Script', cursive;
+  margin: 20px;
+  background-color: black;
+  animation: slidein 1s;
+}
+/*Cabecera*/
+header{
+  display: block;
+  background-color:  #5b7989;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 4vh 4vw;
+  text-shadow:2px 2px 2px #02010a;
+  text-align: left;
+}
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+ nav {
+   word-spacing: 30px;
+   float: right;
+   font-size: 1.5em;
+     }
+a {outline: 0;}
+a:link, a:visited {
+	padding: 0 1px;
+	text-decoration: underline;
+	color:white;
+}
+a.inicio:link, a.inicio:visited{
+  text-decoration: none;
+}
+
+/*Imagenes*/
+
+img{
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: solid 1px black;
+}
+
+#campeones{
+  background-color: #82c3a6;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+}
+.imagenes2{
+  background-color:#d5c75f;
+  border: 1px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.imagenes2 div{
+  box-sizing: border-box;
+  min-height: 600px;
+  min-width: 200px;
+}
+.paisaje{
+  margin-top: 100px;
+  text-align: center;
+  width: 50%;
+  font-size: 1.2em;
+}
+.francia{
+  margin-top: 100px;
+  text-align: center;
+  width: 50%;
+  font-size: 1.2em;
+}
+@media all and (max-width:900px) {
+  .paisaje{
+    width: 100%;
+    order: 1;
+  }
+  .francia{
+    width: 100%;
+    order: 2:
+  }
+}
+@media all and (max-width:900px) and (min-width:500px) {
+  .paisaje{
+    width: 30%;
+  }
+  .francia{
+    width: 70%;
+}
+}
+.paisaje:hover{
+  transform: rotate(10deg);
+  border: 2px;
+}
+.francia:hover{
+  transform: translateX(5px)
+              translateY(-20px);
+}
+
+.paisaje img{
+  border: solid 2px black;
+  box-shadow: #82c3a6;
+}
+.francia img{
+  border: solid 2px black;
+  box-shadow: #82c3a6;
+}
+/* imagenes paisajes-html*/
+section{
+  background-color:#d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+#paisaje1{
+  width: 33.33%;
+}
+#paisaje1 img{
+  -webkit-filter:blur(10px);
+filter:blur(10px);
+}
+#paisaje2{
+  width: 33.33%;
+}
+#paisaje2 img{
+  -webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+#paisaje3{
+  width: 33.33%;
+}
+#paisaje3 img{
+  -webkit-filter:sepia(90%);
+filter:sepia(90%);
+}
+#paisaje4{
+  width: 33.33%;
+}
+#paisaje4 img{
+  -webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+#paisaje5{
+  width: 33.33%;
+}
+#paisaje6{
+  width: 33.33%;
+}
+#paisaje6 img{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+@media all and (max-width:900px) {
+  #paisaje1{
+    width: 100%;
+  }
+  #paisaje2{
+    width: 100%;
+  }
+  #paisaje3{
+    width: 100%;
+  }
+  #paisaje4{
+    width: 100%;
+  }
+  #paisaje5{
+    width: 100%;
+  }
+  #paisaje6{
+    width: 100%;
+  }
+}
+/*Imagenes retratos.html*/
+#embape1{
+  width: 33.33%;
+}
+#embape1 img{
+  -webkit-filter:blur(10px);
+filter:blur(10px);
+}
+#embape2{
+  width: 33.33%;
+}
+#embape2 img{
+  -webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+#embape3{
+  width: 33.33%;
+}
+#embape3 img{
+  -webkit-filter:sepia(90%);
+filter:sepia(90%);
+}
+#embape4{
+  width: 33.33%;
+}
+#embape4 img{
+  -webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+#embape5{
+  width: 33.33%;
+}
+#embape6{
+  width: 33.33%;
+}
+#embape6 img{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+@media all and (max-width:900px) {
+  #embape1{
+    width: 100%;
+  }
+  #embape2{
+    width: 100%;
+  }
+  #embape3{
+    width: 100%;
+  }
+  #embape4{
+    width: 100%;
+  }
+  #embape5{
+    width: 100%;
+  }
+  #embape6{
+    width: 100%;
+  }
+}
+
+/*Pie de pagina*/
+footer{
+  width: 100%;
+}
+#pie{
+  background-color: #C6d5c5;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.0em;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+#contacto{
+  width: 25%;
+}
+#termino{
+  width: 25%;
+}
+#Redes-Sociales{
+  width: 25%;
+}
+#derechos{
+  width: 25%;
+}
+@media all and (max-width:900px) {
+  #contacto{
+    width: 100%;
+  }
+  #termino{
+    width: 100%;
+  }
+  #Redes-Sociales{
+    width: 100%;
+  }
+  #derechos{
+    width: 100%;
+  }
+}
